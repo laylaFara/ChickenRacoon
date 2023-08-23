@@ -43,3 +43,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: bckg
+    uniqueID: 1221911283
+    locked: 0
+  - name: platforms
+    uniqueID: 2115606495
+    locked: 0
+  - name: characters
+    uniqueID: 1413481737
+    locked: 0
+  - name: collectables
+    uniqueID: 4107477991
+    locked: 0
