@@ -28,7 +28,7 @@ public class Grounded : MonoBehaviour
     {
         if (collision.collider.tag == "ground")
         {
-            Player.GetComponent<Jump>().isGrounded = false;
+            Player.GetComponent<HumanMove>().isGrounded = false;
         }
     }
 }
