@@ -7,11 +7,15 @@ public class PlayerSwitch : MonoBehaviour
     public HumanMove humancontroller;
     public ChockenMove chickencontroller;
     public bool Player1active = true;
+   
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        humancontroller.enabled = true;
+        chickencontroller.enabled = false;
+        Player1active = true;
+       
     }
 
     // Update is called once per frame
