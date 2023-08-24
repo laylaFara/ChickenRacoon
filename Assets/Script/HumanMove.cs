@@ -24,7 +24,7 @@ public class HumanMove : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && isGrounded )
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 5f), ForceMode2D.Impulse);
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 9f), ForceMode2D.Impulse);
         }
     }
 }

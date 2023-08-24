@@ -9,7 +9,7 @@ public class StartGame : MonoBehaviour
 
     public void StartGameScript()
     {
-        SceneManager.LoadScene(sceneName:"SampleScene");
+        SceneManager.LoadScene(sceneName:"HudMenu");
         Debug.Log("Start game");
     }
 }
