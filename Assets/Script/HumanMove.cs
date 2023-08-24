@@ -6,10 +6,14 @@ public class HumanMove : MonoBehaviour
 {
     public float moveSpeed = 05;
     public bool isGrounded = false;
+    public GameObject globalStats;
+    public GameObject human;
+    public GameObject chickenPrefab;
+    public Throw Throw;
     // Start is called before the first frame update
     void Start()
     {
-
+        human = globalStats.GetComponent<GlobalStats>().human;
     }
 
     // Update is called once per frame
@@ -30,6 +34,17 @@ public class HumanMove : MonoBehaviour
         else
         {
             animator.SetBool("IsRunning", true);
+        }
+
+
+
+        if (Input.GetKeyDown(KeyCode.RightAlt))
+        {
+            GameObject newChicken = Instantiate(chickenPrefab, (human.transform.position + new Vector3(3, 3, 0)), human.transform.rotation);
+            Destroy(this.globalStats.GetComponent<GlobalStats>().currentChicken);
+            this.globalStats.GetComponent<GlobalStats>().currentChicken = newChicken;
+            newChicken.GetComponent<Throw>().globalStats = this.globalStats;
+            newChicken.GetComponent<Throw>().thrown = true;
         }
     }
 

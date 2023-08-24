@@ -28,7 +28,7 @@ void Update()
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag=="Player") {
             humanFoodCounter.counter++;
-            gameObject.SetActive(false);
+            Destroy(this.gameObject);
             
            //   Debug.Log("CUJEM ZVUK");
             //  audioKljuc.Play();
