@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6497491861994761787}
   - component: {fileID: 6497491861994761784}
   - component: {fileID: 6497491861994761785}
+  - component: {fileID: -2857509377808387555}
   m_Layer: 0
   m_Name: 'player(Chicken) '
   m_TagString: Player
@@ -152,12 +153,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b9373604bd69b4490743a7bf61ab8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Chicken: {fileID: 6497491861994761790}
   human: {fileID: 0}
   speed: 4
   thrown: 1
   launchoffset: {x: 2, y: 2, z: 2}
-  GlobalStats: {fileID: 0}
+  globalStats: {fileID: 0}
+--- !u!95 &-2857509377808387555
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6497491861994761790}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7b3cf64623c0a91449b1dfbb2e3e776c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6497491862378505660
 GameObject:
   m_ObjectHideFlags: 0
