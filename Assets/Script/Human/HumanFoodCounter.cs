@@ -16,6 +16,6 @@ public class HumanFoodCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Text>().text = counter.ToString();
+        //GetComponent<Text>().text = counter.ToString();
     }
 }
