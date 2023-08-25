@@ -14,14 +14,15 @@ public class ProjectileRaccoon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var raccooncome = Input.GetKeyDown(KeyCode.LeftAlt);
+       
 
-            if (raccooncome)
-        {
-            Instantiate(projectilePrefab, transform.position, transform.rotation);
-            //  projectilePrefab.GetComponent<Renderer>().material.color = new Color(0, 255, 0);
-        }
+        
 
+    }
 
+    public void Raccooncome()
+    {
+        Instantiate(projectilePrefab, transform.position, transform.rotation);
+        Debug.Log("I Spawn");
     }
 }

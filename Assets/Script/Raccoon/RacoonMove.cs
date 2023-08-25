@@ -5,6 +5,7 @@ using UnityEngine;
 public class RacoonMove : MonoBehaviour
 {
     public float speed;
+    public Transform projectileRacoon;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,5 +18,17 @@ public class RacoonMove : MonoBehaviour
     {
 
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
+
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "RacoonDestroy")
+        {
+            transform.position = projectileRacoon.position;
+            
+
+        }
     }
 }
