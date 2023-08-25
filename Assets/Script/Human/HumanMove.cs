@@ -85,7 +85,7 @@ public class HumanMove : MonoBehaviour
         if (other.gameObject.tag == "RacoonComes" && !hasSpawnedRaccoon)
         {
             projectileracoon.GetComponent<ProjectileRaccoon>().Raccooncome();
-            Debug.Log("I Enter");
+           
             hasSpawnedRaccoon = true;
         }
     }

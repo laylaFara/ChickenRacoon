@@ -58,23 +58,26 @@ public class ChockenMove : MonoBehaviour
         animator.SetBool("ChickJump", !isGrounded);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
+        if (other.gameObject.tag == "Raccoon")
+        {
+            Debug.Log("GameOver");
+            //GameOver
+
+        } 
+
+
         {
             if (other.gameObject.tag == "RacoonComes" && !hasSpawnedRaccoon)
             {
                 projectileRacoonCh.GetComponent<ProjectileRaccoon>().Raccooncome();
-                Debug.Log("I Enter");
+                
                 hasSpawnedRaccoon = true;
             }
         }
 
-        if (other.gameObject.tag == "Raccoon")
-        {
-            Debug.Log("GameOver");
-           //GameOver
-
-        }
+        
     }
 
  
