@@ -5,14 +5,13 @@ using UnityEngine;
 public class RacoonMove : MonoBehaviour
 {
     public float speed;
-    public GameObject projectileRacoon;
     public Rigidbody2D rigidbody;
     
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        rigidbody.velocity = transform.up * 10f;
+        rigidbody.velocity = transform.right * 10f;
     }
 
     // Update is called once per frame
@@ -24,13 +23,5 @@ public class RacoonMove : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "RacoonDestroy")
-        {
-            
-            projectileRacoon.GetComponent<ProjectileRaccoon>().Raccooncome();
-            Destroy(gameObject);
-        }
-    }
+   
 }

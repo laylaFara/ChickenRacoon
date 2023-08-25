@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 6497491861994761787}
   - component: {fileID: 6497491861994761784}
   - component: {fileID: 6497491861994761785}
-  - component: {fileID: -2857509377808387555}
+  - component: {fileID: 388293502}
   m_Layer: 0
   m_Name: 'player(Chicken) '
-  m_TagString: Player
+  m_TagString: Chicken
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,6 +141,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   isGrounded: 1
+  projectileRacoonCh: {fileID: 0}
+  hasSpawnedRaccoon: 0
+  spawnTimer: 60
+  spawnCountdown: 0
 --- !u!114 &6497491861994761785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,10 +159,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   human: {fileID: 0}
   speed: 4
-  thrown: 1
+  thrown: 0
   launchoffset: {x: 2, y: 2, z: 2}
   globalStats: {fileID: 0}
---- !u!95 &-2857509377808387555
+--- !u!95 &388293502
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
