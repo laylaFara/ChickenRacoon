@@ -9,6 +9,7 @@ TagManager:
   - HumanFood
   - RacoonComes
   - RacoonDestroy
+  - Raccoon
   layers:
   - Default
   - TransparentFX

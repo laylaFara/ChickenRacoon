@@ -11,6 +11,9 @@ public class HumanMove : MonoBehaviour
     public GameObject chickenPrefab;
     public Throw Throw;
     public GameObject projectileracoon;
+    public bool hasSpawnedRaccoon = false;
+    public float spawnTimer = 60;
+    public float spawnCountdown = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +52,15 @@ public class HumanMove : MonoBehaviour
             newChicken.GetComponent<Throw>().thrown = true;
         }
 
+        if(hasSpawnedRaccoon)
+        {
+            spawnCountdown += Time.deltaTime;
+            if(spawnCountdown > spawnTimer)
+            {
+                spawnCountdown = 0;
+                hasSpawnedRaccoon = false;
+            }
+        }
 
     }
 
@@ -70,11 +82,11 @@ public class HumanMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "RacoonComes")
+        if (other.gameObject.tag == "RacoonComes" && !hasSpawnedRaccoon)
         {
             projectileracoon.GetComponent<ProjectileRaccoon>().Raccooncome();
             Debug.Log("I Enter");
-         
+            hasSpawnedRaccoon = true;
         }
     }
 }

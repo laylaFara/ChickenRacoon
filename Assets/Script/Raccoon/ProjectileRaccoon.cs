@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ProjectileRaccoon : MonoBehaviour
 {
+    
     public GameObject projectilePrefab;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class ProjectileRaccoon : MonoBehaviour
 
     public void Raccooncome()
     {
+
         Instantiate(projectilePrefab, transform.position, transform.rotation);
         Debug.Log("I Spawn");
     }

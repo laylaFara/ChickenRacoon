@@ -1656,7 +1656,7 @@ GameObject:
   - component: {fileID: 1478629038}
   m_Layer: 0
   m_Name: Raccoon
-  m_TagString: Untagged
+  m_TagString: Raccoon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1674,7 +1674,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  projectileRacoon: {fileID: 1533912451}
+  projectileRacoon: {fileID: 1533912449}
+  rigidbody: {fileID: 0}
 --- !u!212 &1478629036
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3383,6 +3384,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -5.710204
       objectReference: {fileID: 0}
+    - target: {fileID: 6497491861994761784, guid: ad8e53a5242ea2545983cf3109bcf10c, type: 3}
+      propertyPath: projectileRacoonCh
+      value: 
+      objectReference: {fileID: 1533912449}
     - target: {fileID: 6497491861994761785, guid: ad8e53a5242ea2545983cf3109bcf10c, type: 3}
       propertyPath: thrown
       value: 0
