@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2495440545246011987}
   - component: {fileID: 2495440545246011986}
   - component: {fileID: 2495440545246011988}
-  - component: {fileID: 3123201406097983618}
+  - component: {fileID: 2243885862411892380}
   m_Layer: 0
-  m_Name: seed
+  m_Name: Berries
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: -187489305
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1161870426, guid: 9e313a1169dde0042a6f3932edfe6a53, type: 3}
+  m_Sprite: {fileID: -1129255019, guid: 65fa75a7bb3215748a99e7815a9a4309, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,7 +103,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.85, y: 0.38}
+    oldSize: {x: 0.78999996, y: 0.58}
     newSize: {x: 0.78999996, y: 0.58}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -112,7 +112,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.78999996, y: 0.58}
   m_EdgeRadius: 0
---- !u!114 &3123201406097983618
+--- !u!114 &2243885862411892380
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,6 +121,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2495440545246011984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 080fcc997307ea24c940c78f82a1ea19, type: 3}
+  m_Script: {fileID: 11500000, guid: 340bb3e42198759479a501c70cf2a331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
