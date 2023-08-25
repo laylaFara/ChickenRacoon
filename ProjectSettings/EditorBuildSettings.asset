@@ -6,31 +6,31 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StartMenu.unity
+    path: Assets/Scenes/Levels/StartMenu.unity
     guid: 9500fe5136940234f8071521f34680cf
   - enabled: 1
-    path: Assets/Scenes/LvLTut1.unity
+    path: Assets/Scenes/Levels/LvLTut1.unity
     guid: 9c5e5c1353e274046936a8af966a6817
   - enabled: 1
-    path: Assets/Scenes/LvLTut2.unity
+    path: Assets/Scenes/Levels/LvLTut2.unity
     guid: f9f8779566421e941a1d8e488a4ed7a6
   - enabled: 1
-    path: Assets/Scenes/LvLmain1.unity
+    path: Assets/Scenes/Levels/LvLmain1.unity
     guid: 010b28dd2522e5343bafc115ef05aa35
   - enabled: 1
-    path: Assets/Scenes/LvLmain2.unity
+    path: Assets/Scenes/Levels/LvLmain2.unity
     guid: db33c5a37c9ff5047b05da12fa9b0903
   - enabled: 1
-    path: Assets/Scenes/1stChoiceScreen.unity
+    path: Assets/Scenes/Levels/1stChoiceScreen.unity
     guid: 58bfa9d8a110de5479ee06d46cf1f350
   - enabled: 1
     path: Assets/Scenes/excitedchicl.unity
     guid: 14d2f2c61b8ca1d4faabf74a277c33d4
   - enabled: 1
-    path: Assets/Scenes/chickKillsU.unity
+    path: Assets/Scenes/Levels/chickKillsU.unity
     guid: bbfc8551578c4714f909416a94f39788
   - enabled: 1
-    path: Assets/Scenes/ChickSad.unity
+    path: Assets/Scenes/Levels/ChickSad.unity
     guid: f25889ed848c330438db464146c33586
   - enabled: 1
     path: Assets/Scenes/ChickHappy.unity

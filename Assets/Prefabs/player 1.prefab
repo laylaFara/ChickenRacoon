@@ -170,7 +170,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -211,6 +211,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   isGrounded: 0
+  globalStats: {fileID: 0}
+  human: {fileID: 0}
+  chickenPrefab: {fileID: 6497491861994761790, guid: ad8e53a5242ea2545983cf3109bcf10c, type: 3}
+  Throw: {fileID: 0}
+  projectileracoon: {fileID: 0}
+  hasSpawnedRaccoon: 0
+  spawnTimer: 4
+  spawnCountdown: 0
 --- !u!95 &6032605270298547803
 Animator:
   serializedVersion: 4

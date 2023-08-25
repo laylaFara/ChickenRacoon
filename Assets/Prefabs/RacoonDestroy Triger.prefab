@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7817794477102383415}
   - component: {fileID: 7817794477102383412}
   - component: {fileID: 7817794477102383413}
+  - component: {fileID: 363569279}
   m_Layer: 0
   m_Name: RacoonDestroy Triger
   m_TagString: RacoonDestroy
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 7817794477102383410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.39, y: -5.01, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.6738, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -101,3 +102,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!114 &363569279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7817794477102383410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5c4c42d9e8ac374da71ccf8b1602100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
