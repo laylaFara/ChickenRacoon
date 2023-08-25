@@ -5,12 +5,36 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: 9500fe5136940234f8071521f34680cf
+  - enabled: 1
+    path: Assets/Scenes/LvLTut1.unity
+    guid: 9c5e5c1353e274046936a8af966a6817
+  - enabled: 1
+    path: Assets/Scenes/LvLTut2.unity
+    guid: f9f8779566421e941a1d8e488a4ed7a6
+  - enabled: 1
+    path: Assets/Scenes/LvLmain1.unity
+    guid: 010b28dd2522e5343bafc115ef05aa35
+  - enabled: 1
+    path: Assets/Scenes/LvLmain2.unity
+    guid: db33c5a37c9ff5047b05da12fa9b0903
+  - enabled: 1
+    path: Assets/Scenes/1stChoiceScreen.unity
+    guid: 58bfa9d8a110de5479ee06d46cf1f350
+  - enabled: 1
+    path: Assets/Scenes/excitedchicl.unity
+    guid: 14d2f2c61b8ca1d4faabf74a277c33d4
+  - enabled: 1
+    path: Assets/Scenes/chickKillsU.unity
+    guid: bbfc8551578c4714f909416a94f39788
+  - enabled: 1
+    path: Assets/Scenes/ChickSad.unity
+    guid: f25889ed848c330438db464146c33586
+  - enabled: 1
+    path: Assets/Scenes/ChickHappy.unity
+    guid: 579e18f773d095a48989c634f9517139
   - enabled: 1
     path: Assets/Scenes/HudMenu.unity
     guid: cadfb65163982e544822bbe9819e84c0

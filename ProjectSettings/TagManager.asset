@@ -60,3 +60,9 @@ TagManager:
   - name: collectables
     uniqueID: 4107477991
     locked: 0
+  - name: uibottom
+    uniqueID: 3034828989
+    locked: 0
+  - name: uitop
+    uniqueID: 1258022109
+    locked: 0

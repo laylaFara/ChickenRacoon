@@ -9,7 +9,7 @@ public class StartGame : MonoBehaviour
 
     public void StartGameScript()
     {
-        SceneManager.LoadScene(sceneName:"HudMenu");
+        SceneManager.LoadScene(sceneName:"LvLTut1");
         Debug.Log("Start game");
     }
 }
