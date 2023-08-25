@@ -6,6 +6,10 @@ public class ChockenMove : MonoBehaviour
 {
     public float moveSpeed = 03;
     public bool isGrounded = false;
+    public GameObject projectileRacoonCh;
+    public bool hasSpawnedRaccoon = false;
+    public float spawnTimer = 60;
+    public float spawnCountdown = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +34,15 @@ public class ChockenMove : MonoBehaviour
         {
             animator.SetBool("ChickRun", true);
         }
-
+        if (hasSpawnedRaccoon)
+        {
+            spawnCountdown += Time.deltaTime;
+            if (spawnCountdown > spawnTimer)
+            {
+                spawnCountdown = 0;
+                hasSpawnedRaccoon = false;
+            }
+        }
 
 
     }
@@ -45,4 +57,25 @@ public class ChockenMove : MonoBehaviour
         }
         animator.SetBool("ChickJump", !isGrounded);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        {
+            if (other.gameObject.tag == "RacoonComes" && !hasSpawnedRaccoon)
+            {
+                projectileRacoonCh.GetComponent<ProjectileRaccoon>().Raccooncome();
+                Debug.Log("I Enter");
+                hasSpawnedRaccoon = true;
+            }
+        }
+
+        if (other.gameObject.tag == "Raccoon")
+        {
+            Debug.Log("GameOver");
+           //GameOver
+
+        }
+    }
+
+ 
 }
