@@ -579,7 +579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7472434718750226256, guid: a8e6a2d174ea92044b864c5edbcc62cf, type: 3}
       propertyPath: m_UsedByEffector
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7472434718750226256, guid: a8e6a2d174ea92044b864c5edbcc62cf, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -591,7 +591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7472434718750226268, guid: a8e6a2d174ea92044b864c5edbcc62cf, type: 3}
       propertyPath: m_Name
-      value: cracked
+      value: platforma1
       objectReference: {fileID: 0}
     - target: {fileID: 7472434718750226269, guid: a8e6a2d174ea92044b864c5edbcc62cf, type: 3}
       propertyPath: m_RootOrder
@@ -680,25 +680,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!251 &846151233
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846151226}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 203.86
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!50 &846151238
 Rigidbody2D:
   serializedVersion: 4

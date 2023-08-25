@@ -16,10 +16,15 @@ public class parentPlatform : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
-        collision.transform.SetParent(transform);
+    private void OnCollisionStay2D(Collision2D other) {
+        
+        if (other.gameObject.tag == "Player")
+        {
+            other.gameObject.GetComponent<Rigidbody2D>().velocity
+            =
+            GetComponent<Rigidbody2D>().velocity;  
+            Debug.Log(other.gameObject.GetComponent<Rigidbody2D>().velocity + " " + GetComponent<Rigidbody2D>().velocity  );
+        }
     }
-    private void OnCollisionExit2D(Collision2D collision) {
-        collision.transform.SetParent(null);
-    }
+    
 }

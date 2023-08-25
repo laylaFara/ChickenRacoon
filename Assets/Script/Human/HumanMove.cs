@@ -89,5 +89,16 @@ public class HumanMove : MonoBehaviour
             hasSpawnedRaccoon = true;
         }
     }
+    private void OnCollisionEnter2D(Collision2D col) {
+        if (col.gameObject.tag.Equals("ground")){
+            this.transform.parent = col.transform;  }     
+    }
+
+    private void OnCollisionExit2D(Collision2D col) {
+        if (col.gameObject.tag.Equals("ground")){
+            this.transform.parent = null;   }    
+    }
+
 }
+
 
