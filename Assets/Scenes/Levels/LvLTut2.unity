@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RaccoonTrigers
       objectReference: {fileID: 0}
+    - target: {fileID: 1534556011012573519, guid: 010f802ad13c5c6468314347e8952e41, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 010f802ad13c5c6468314347e8952e41, type: 3}
 --- !u!1 &279083784
@@ -648,6 +652,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &494950078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8331851368400737324, guid: d47aecf1bb1b36f4986f8dd9bcad6786, type: 3}
+  m_PrefabInstance: {fileID: 1974865778}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &494950082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494950078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227ce15b658bb4744a63c6c86be86752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &503860322
 GameObject:
   m_ObjectHideFlags: 0
@@ -2181,9 +2202,13 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -4.29
       objectReference: {fileID: 0}
+    - target: {fileID: 8331851368400737324, guid: d47aecf1bb1b36f4986f8dd9bcad6786, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8331851368627990484, guid: d47aecf1bb1b36f4986f8dd9bcad6786, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.23
+      value: 15.88
       objectReference: {fileID: 0}
     - target: {fileID: 8331851368627990484, guid: d47aecf1bb1b36f4986f8dd9bcad6786, type: 3}
       propertyPath: m_LocalPosition.y
